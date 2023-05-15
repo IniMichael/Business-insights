@@ -1,119 +1,145 @@
-* {
+.general-wrapper{
+  background-color: rgb(0, 1, 14);
+  color: hsl(0, 0%, 90%);
+  height: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 160px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0px;
+}
+
+.pic-wrapper{
+  background-image: url(./assets/bizinsights.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width: 850px;
+  margin-top: 60px;
+  order: 2;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.body-wrapper{
+  background-color: rgb(20, 15, 43);
+  color: white;
+  height: 1260px;
+  width: 750px;
+  order: 2;
+  padding: 10px 50px 20px 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 30px;
+  font-weight: 0px;
+}
+
+span.insights{
+  color: rgb(155, 35, 157);
+  font-size: 83px;
+  height: 100px;
+}
+
+.head{
+  font-size: 83px;
+  padding-bottom: 0px;
+  height: 200px;
+  font-weight: 600;
+}
+
+.main{
+  font-size: 50px;
+  margin-top: 130px;
+  height: 250px;
+}
+
+.big-end{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+li{
+  display: block;
+  padding-top: 20px;
+}
+
+@media  screen and (min-width: 1024px) {
+*{ 
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-body {
+.general-wrapper{
   background-color: rgb(0, 1, 14);
   color: hsl(0, 0%, 90%);
   height: 100vh;
   padding: 200px;
+  font-weight: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.pic-wrapper {
+.pic-wrapper{
   background-image: url(./assets/bizinsights.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
   width: 600px;
   margin: 0px;
-  display: flex;
   order: 2;
   border-top-right-radius: 5px;
+  border-top-left-radius: 0px;
   border-bottom-right-radius: 5px;
 }
 
-.body-wrapper {
+.body-wrapper{
   background-color: rgb(20, 15, 43);
   color: white;
   height: 400px;
   width: 600px;
-  display: flex;
-  flex-direction: column;
   order: 1;
-  font-size: 16px;
   padding: 50px 50px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: left;
 }
 
-span.insight {
+span.insights{
   color: rgb(155, 35, 157);
+  font-size: 40px;
 }
 
-.head {
-  font-size: 35px;
-  font-weight: bolder;
-  padding-bottom: 40px;
+.head{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  height: 80px;
 }
 
-.big-end {
+.main{
+  font-size: 17px;
+  height: 30px;
+  width: 350px;
+  margin-top: 0px;
+}
+
+.big-end{
   font-size: 25px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
-li {
+li{
   display: inline-block;
-  width: 120px;
-  padding-top: 70px;
+  width: 126px;
+  padding-top: 100px;
+  font-size: 12px;
 }
-
-/* @media screen and (max-width:760px) {
-    body{
-        height: 100%;
-        width: 100%;
-        margin: 20px;
-        padding: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .pic-wrapper{
-        background: url(./assets/bizinsights.JPG);
-        height: 200px;
-        width: 300px;
-        margin: 0px;
-        display: flex;
-        order: 2;
-        border-radius: 50px;
-    }
-
-    .body-wrapper{
-        background-color: rgb(20, 15, 43);
-        color: white;
-        height: 0px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        order: 1;
-        font-size: 18px;
-        padding: 20px 20px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        max-height: 100px;
-        font-family: 'Montez', cursive;
-    }
-    
-    .head{
-        font-size: 25px;
-        font-weight: bold;
-        padding-bottom: 20px;
-    }
-    
-    .big-end{
-        font-size: 18px;
-        font-weight: bold;
-    }
-    
-    li{
-        display: inline-block;
-        width: 60px;
-        padding-top: 40px;
-    }
-
-} */
+}
